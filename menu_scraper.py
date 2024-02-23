@@ -8,7 +8,7 @@ current_date = datetime.datetime.now().strftime("%Y-%m-%d")
 # URL of the website to scrape
 dateless_url = "https://apps.dining.ucsb.edu/menu/day?dc={}&d={}&m=breakfast&m=brunch&m=lunch&m=dinner&m=late-night&food="
 
-location = input("Enter the location (de-la-guerra or ortega): ")
+location = input("Enter the location (de-la-guerra, carillo, portola, or ortega): ")
 
 # Format the URL with the current date
 url = dateless_url.format(location, current_date)
